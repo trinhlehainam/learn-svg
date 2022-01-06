@@ -9,8 +9,6 @@ function Icon() {
             height="144.123"
             version="1.1"
             viewBox="0 0 123.644 38.133"
-
-            className="btn-base"
         >
             <defs>
                 <radialGradient id="my-gradient">
@@ -32,7 +30,6 @@ function Icon() {
                                 strokeOpacity="1"
                                 strokeWidth="22.638"
                                 d="M3396.08 15894.7H1924.64v405.3h1471.44z"
-
                             />
                             <path
                                 fill="none"
