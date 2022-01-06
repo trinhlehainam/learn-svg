@@ -1,0 +1,42 @@
+@tailwind components;
+
+@layer components {
+    .btn-base {
+        @apply transition duration-[1.5s] ease-out
+    }
+
+    .btn-base:hover {
+        @apply transform scale-[1.2] filter drop-shadow-[0px_0px_5px_#fff]
+    }
+}
+
+.fill {
+    fill: url(#my-gradient);
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+    transition: ease-in-out 0.5s;
+}
+
+.btn-base:hover .fill {
+    clip-path: polygon(50% -50%, 150% 50%, 50% 150%, -50% 50%);
+}
+
+.path {
+    stroke-dasharray: 800;
+    stroke-dashoffset: -800;
+    transition: ease 2s;
+}
+
+.btn-base:hover .path{
+    stroke-dashoffset: 0;
+    stroke-dasharray: 800;
+} 
+
+.diamond{
+    fill-opacity: 0;
+    transition: ease 1.2s;
+} 
+
+.btn-base:hover .diamond{
+    fill-opacity: 1;
+}
+
