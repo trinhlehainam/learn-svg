@@ -1,46 +1,90 @@
-# Getting Started with Create React App
+# Learn svg css
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of contents
 
-## Available Scripts
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+### Screenshot
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![]()
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Links
 
-### `npm test`
+- Live Site URL: [](https://trinhlehainam.github.io/tipcalculatorchallenge/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## My process
 
-### `npm run build`
+### Built with
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- [React](https://reactjs.org/) - React framework
+- [Tailwind CSS](https://tailwindcss.com/) - CSS framework
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### What I learned
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- I learned how to use google font API.
 
-### `npm run eject`
+```css
+@import url(https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;600;700&display=swap);
+```
+- I learned how to use React context to pass global state to all children components.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```ts
+// App.tsx
+<InputContext.Provider value={inputContext}>
+...
+</InputContext.Provider>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+// selectip.component.tsx
+const { bill, setBill } = useContext(InputContext);
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- I learned how to avoid bug when checking state's value.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```tsx
+// from
+setSelectedTip && customTip && setSelectedTip(customTip);
+// to
+setSelectedTip && (customTip !== undefined) && setSelectedTip(customTip);
+```
 
-## Learn More
+- I learned how to set root path for Create React App build project correct by setting homepage attribule in package.json to '.'
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```package.json
+{
+    ...
+    "homepage": ".",
+    ...
+}
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Continued development
+
+### Useful resources
+
+- [svg line animation](https://css-tricks.com/svg-line-animation-works/) - This help to how to use animate svg line.
+- [svg gradients](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Gradients) - This help to how to fill gradient color in svg.
+- [clipPath](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/clipPath) - This help to how to use clip-path to clip images.
+- [clipPath Animation](https://css-playground.com/view/65/clipping-paths-with-clip-path) - This help to how to use animate clip-path in svg.
+- [add custom font to react](https://blog.greenroots.info/3-quick-ways-to-add-fonts-to-your-react-app) - This help to how to add custom front to my React Project.
+
+## Author
+
+- GitHub - [@trinhlehainam](https://github.com/trinhlehainam)
+- Twitter - [@namtrile](https://www.twitter.com/namtrile)
+
+## Acknowledgments
