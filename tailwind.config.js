@@ -6,6 +6,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 Odinson: 'Odinson',
+                Dalek: 'Dalek'
             },
             animation: {
 
