@@ -3,7 +3,6 @@
 ## Table of contents
 
 - [Overview](#overview)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -15,13 +14,9 @@
 
 ## Overview
 
-### Screenshot
-
-![]()
-
 ### Links
 
-- Live Site URL: [](https://trinhlehainam.github.io/tipcalculatorchallenge/)
+- Live Site URL: [Link](https://trinhlehainam.github.io/learn-svg/)
 
 ## My process
 
@@ -35,40 +30,55 @@
 - [Tailwind CSS](https://tailwindcss.com/) - CSS framework
 
 ### What I learned
+- Use stroke dash to animate svg path line.
 
-- I learned how to use google font API.
+``` css
+.path {
+    stroke-dasharray: 800;
+    stroke-dashoffset: -800;
+    transition: ease 2s;
+}
+
+.path:hover{
+    stroke-dashoffset: 0;
+    stroke-dasharray: 800;
+} 
+```
+
+- Use svg grandient element.
+
+```html/ jsx
+<svg>
+    <defs>
+        <radialGradient id="my-gradient">
+            <stop offset="0%" stopColor="#e66465" />
+            <stop offset="100%" stopColor="#9198e5" />
+        </radialGradient>
+    </defs>
+...
+</svg>
+```
+
+- Clip path and clip path animation.
 
 ```css
-@import url(https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;600;700&display=swap);
-```
-- I learned how to use React context to pass global state to all children components.
+.fill {
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+    transition: ease-in-out 0.5s;
+}
 
-```ts
-// App.tsx
-<InputContext.Provider value={inputContext}>
-...
-</InputContext.Provider>
-
-// selectip.component.tsx
-const { bill, setBill } = useContext(InputContext);
+.btn-base:hover .fill {
+    clip-path: polygon(50% -50%, 150% 50%, 50% 150%, -50% 50%);
+}
 ```
 
-- I learned how to avoid bug when checking state's value.
+- How to add custom font-face to React App with CSS. Need to move font files to src/fonts/ folder.
 
-```tsx
-// from
-setSelectedTip && customTip && setSelectedTip(customTip);
-// to
-setSelectedTip && (customTip !== undefined) && setSelectedTip(customTip);
-```
-
-- I learned how to set root path for Create React App build project correct by setting homepage attribule in package.json to '.'
-
-```package.json
-{
-    ...
-    "homepage": ".",
-    ...
+```css
+@font-face {
+    font-family: "Odinson";
+    src: url("../fonts/Odinson.ttf") format('truetype');
+    font-weight: normal;
 }
 ```
 
