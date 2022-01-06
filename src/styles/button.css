@@ -1,13 +1,10 @@
-@tailwind components;
+.btn-base {
+    transition: ease 1.5s;
+}
 
-@layer components {
-    .btn-base {
-        @apply transition duration-[1.5s] ease-out
-    }
-
-    .btn-base:hover {
-        @apply transform scale-[1.2] filter drop-shadow-[0px_0px_5px_#fff]
-    }
+.btn-base:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 10px #ffd58c) drop-shadow(0 0 12px #ffd58c66);
 }
 
 .fill {

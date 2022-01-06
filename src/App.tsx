@@ -21,16 +21,32 @@ const App = () => {
     return (
         <motion.div
             className={cx(
-                "flex flex-col gap-2 justify-center items-center",
-                "font-Dalek font-bold text-4xl"
+                "flex flex-col justify-center items-center gap-0",
+                "font-Dalek font-bold text-3xl",
+                "sm:text-5xl"
             )}
-            variants={baseVariants}
-            initial='hidden'
-            animate='visible'
         >
-            <Button classname="" text="Play" />
-            <Button classname="" text="Options" />
-            <Button classname="" text="Quit" />
+            <div
+                className={cx(
+                    "relative text-8xl -top-16 text-yellow-custom",
+                    "sm:text-9xl"
+                )}
+            >
+                GEMTD
+            </div>
+            <motion.div
+                className={cx(
+                    "flex flex-col justify-center items-center",
+                    "sm:gap-2"
+                )}
+                variants={baseVariants}
+                initial='hidden'
+                animate='visible'
+            >
+                <Button classname="w-4/5 sm:w-full" text="Play" />
+                <Button classname="w-4/5 sm:w-full" text="Options" />
+                <Button classname="w-4/5 sm:w-full" text="Quit" />
+            </motion.div>
         </motion.div>
     );
 }

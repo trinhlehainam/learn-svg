@@ -4,6 +4,11 @@ module.exports = {
     ],
     theme: {
         extend: {
+            colors: {
+                yellow : {
+                    custom: '#ffd58c',
+                }
+            },
             fontFamily: {
                 Odinson: 'Odinson',
                 Dalek: 'Dalek'
