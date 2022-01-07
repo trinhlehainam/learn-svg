@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "./static/css/main.351e2c5b.css",
-    "main.js": "./static/js/main.598ce3a1.js",
+    "main.css": "./static/css/main.7d8b2129.css",
+    "main.js": "./static/js/main.007b1744.js",
     "static/js/787.5f99f7c7.chunk.js": "./static/js/787.5f99f7c7.chunk.js",
     "static/media/DalekPinpointBold.ttf": "./static/media/DalekPinpointBold.cb54d752865fdfa2b1bf.ttf",
     "static/media/Odinson.ttf": "./static/media/Odinson.398c4e587edfdbe91442.ttf",
     "index.html": "./index.html",
-    "main.351e2c5b.css.map": "./static/css/main.351e2c5b.css.map",
-    "main.598ce3a1.js.map": "./static/js/main.598ce3a1.js.map",
+    "main.7d8b2129.css.map": "./static/css/main.7d8b2129.css.map",
+    "main.007b1744.js.map": "./static/js/main.007b1744.js.map",
     "787.5f99f7c7.chunk.js.map": "./static/js/787.5f99f7c7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.351e2c5b.css",
-    "static/js/main.598ce3a1.js"
+    "static/css/main.7d8b2129.css",
+    "static/js/main.007b1744.js"
   ]
 }
