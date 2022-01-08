@@ -27,8 +27,10 @@ const Title = () => {
             animate="visible"
         >
             <motion.div
-            variants={variants}
-            >GEM</motion.div>
+                variants={variants}
+            >
+                GEM
+            </motion.div>
             <img
                 className={cx(
                     "w-[72px] h-[72px]",
@@ -37,8 +39,10 @@ const Title = () => {
                 src={`${process.env.PUBLIC_URL}/images/gem.png`}
                 alt="gem icon" />
             <motion.div
-            variants={variants}
-            >TD</motion.div>
+                variants={variants}
+            >
+                TD
+            </motion.div>
         </motion.div>
     );
 };

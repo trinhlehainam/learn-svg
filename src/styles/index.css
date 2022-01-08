@@ -4,7 +4,7 @@
 
 @layer base {
     body {
-        @apply flex justify-center bg-purple-900 min-h-screen
+        @apply flex justify-center bg-purple-900 min-h-screen font-Dalek font-bold
     }
 }
 

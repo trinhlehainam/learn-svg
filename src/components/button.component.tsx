@@ -7,20 +7,28 @@ import Icon from "../svg/icon.svg"
 type Props = {
     classname: string,
     text: string
-    delay: number,
+    enter_delay: number,
+    exit_delay: number
 };
 
-const Button: FC<Props> = ({ classname, text, delay }) => {
+const Button: FC<Props> = ({ classname, text, enter_delay, exit_delay }) => {
     const variants: Variants = {
         hidden: {
-            y: '-100vh',
+            y: '100vh',
         },
         visible: {
             y: '0',
             transition: {
                 type: 'spring',
                 stiffness: 60,
-                delay: delay
+                delay: enter_delay
+            }
+        },
+        exit: {
+            y: '100vh',
+            transition: {
+                duration: 0.4,
+                delay: exit_delay
             }
         },
         hover: {
@@ -41,7 +49,9 @@ const Button: FC<Props> = ({ classname, text, delay }) => {
             variants={variants}
             initial='hidden'
             animate='visible'
+            exit='exit'
             whileHover='hover'
+            whileTap='hover'
         >
             <Icon />
             <div className="absolute m-auto text-center text-[#ffd58c] select-none">
