@@ -21,31 +21,32 @@ const App = () => {
     return (
         <motion.div
             className={cx(
-                "flex flex-col justify-center items-center gap-0",
+                "flex flex-col items-center gap-0",
                 "font-Dalek font-bold text-3xl",
                 "sm:text-5xl"
             )}
         >
             <div
                 className={cx(
-                    "relative text-8xl -top-16 text-yellow-custom",
-                    "sm:text-9xl"
+                    "relative text-7xl text-yellow-custom",
+                    "mt-28 mb-28",
+                    "sm:text-9xl sm:mt-32 sm:mb-20"
                 )}
             >
                 GEMTD
             </div>
             <motion.div
                 className={cx(
-                    "flex flex-col justify-center items-center",
-                    "sm:gap-2"
+                    "flex flex-col items-center gap-6",
+                    "sm:gap-1"
                 )}
                 variants={baseVariants}
                 initial='hidden'
                 animate='visible'
             >
-                <Button classname="w-4/5 sm:w-full" text="Play" />
-                <Button classname="w-4/5 sm:w-full" text="Options" />
-                <Button classname="w-4/5 sm:w-full" text="Quit" />
+                <Button classname="w-3/5 sm:w-full" text="Single" />
+                <Button classname="w-3/5 sm:w-full" text="Multiplayer" />
+                <Button classname="w-3/5 sm:w-full" text="Setting" />
             </motion.div>
         </motion.div>
     );
