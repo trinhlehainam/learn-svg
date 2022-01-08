@@ -4,6 +4,7 @@ import Title from '../components/title.component'
 import Button from '../components/button.component'
 
 const Home = () => {
+    const menuTexts = ['Play', 'Login', 'Setting'];
     return (
         <div
             className={cx(
@@ -16,12 +17,15 @@ const Home = () => {
             <div
                 className={cx(
                     "flex flex-col items-center gap-6",
-                    "sm:gap-1",
+                    "sm:gap-1 sm:[--offset-length:-770]",
                 )}
             >
-                <Button classname="w-3/5 sm:w-full" text="Single" delay={0.6}/>
-                <Button classname="w-3/5 sm:w-full" text="Multiplayer" delay={0.4}/>
-                <Button classname="w-3/5 sm:w-full" text="Setting" delay={0.2}/>
+                {menuTexts.map((text, idx) => {
+                    const delay = 1.6 - 0.2 * idx;
+                    return (
+                        <Button classname="w-3/5 sm:w-full" text={text} delay={delay} />
+                    )
+                })}
             </div>
         </div>
     );
