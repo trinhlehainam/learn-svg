@@ -11,7 +11,6 @@ const Home = () => {
     return (
         <div
             className={cx(
-                "flex flex-col items-center gap-0",
                 "text-3xl",
                 "sm:text-5xl"
             )}

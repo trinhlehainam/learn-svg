@@ -18,7 +18,7 @@ const Menu: FC<Props> = ({context}) => {
     return (
         <div
             className={cx(
-                "flex flex-col items-center gap-6",
+                "flex flex-col items-center justify-center gap-6",
                 "sm:gap-1 sm:[--offset-length:-770]",
             )}
         >
@@ -26,8 +26,8 @@ const Menu: FC<Props> = ({context}) => {
                 const enter = 1 + 0.2 * idx;
                 const exit = 0.6 - 0.2 * idx;
                 return (
-                    <Link to={path} key={`${text}-${idx}`}>
-                        <Button classname="w-3/5 sm:w-full" text={text} enter_delay={enter} exit_delay={exit} />
+                    <Link className='w-3/5 sm:w-full' to={path} key={`${text}-${idx}`}>
+                        <Button classname="mx-auto" text={text} enter_delay={enter} exit_delay={exit} />
                     </Link>
                 )
             })}
