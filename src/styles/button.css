@@ -1,9 +1,10 @@
 :root {
-    --path-length: 770;
+    --array-length: 770;
+    --offset-length: -770;
 }
 
 .btn-base {
-    transition: ease 1.5s;
+    /* transition: ease 1.5s; */
 }
 
 .btn-base:hover {
@@ -22,8 +23,8 @@
 }
 
 .path {
-    stroke-dasharray: var(--path-length);
-    stroke-dashoffset: var(--path-length);
+    stroke-dasharray: var(--array-length);
+    stroke-dashoffset: var(--offset-length);
     transition: ease 2s;
 }
 
