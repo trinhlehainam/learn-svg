@@ -1,3 +1,7 @@
+:root {
+    --path-length: 770;
+}
+
 .btn-base {
     transition: ease 1.5s;
 }
@@ -18,14 +22,13 @@
 }
 
 .path {
-    stroke-dasharray: 800;
-    stroke-dashoffset: -800;
+    stroke-dasharray: var(--path-length);
+    stroke-dashoffset: var(--path-length);
     transition: ease 2s;
 }
 
 .btn-base:hover .path{
     stroke-dashoffset: 0;
-    stroke-dasharray: 800;
 } 
 
 .diamond{
