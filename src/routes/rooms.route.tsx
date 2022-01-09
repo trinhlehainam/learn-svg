@@ -35,7 +35,10 @@ const Rooms = () => {
             name: 'CCCCCCC',
             players: '1/3'
         },
-    ]
+    ];
+
+    // TODO: layout close button
+
     return (
         <div
             className={cx(
@@ -57,16 +60,16 @@ const Rooms = () => {
                     'md:text-5xl'
                 )}
                 >
-                    <RoomTitleBorderTop classname='w-fit h-auto' />
+                    <RoomTitleBorderTop classname='w-[80%] sm:w-fit h-auto' />
                     <div className="my-2">
                         ROOM
                     </div>
-                    <RoomTitleBorderBottom classname='w-fit h-auto' />
+                    <RoomTitleBorderBottom classname='w-[80%] sm:w-fit h-auto' />
                 </div>
                 <Link to='/play'>
-                    <RoomCancelButton classname='absolute top-0 right-0 w-auto hidden sm:block' />
+                    <RoomCancelButton classname='absolute top-0 right-0 w-auto hidden' />
                 </Link>
-                <RoomLine1 classname='w-[75%] max-w-[1107px] h-auto max-h-6 absolute top-[30%]' />
+                <RoomLine1 classname='w-[75%] max-w-[1107px] h-auto max-h-6 absolute top-[32%] sm:top-[30%]' />
                 <RoomLine2 classname='w-[75%] max-w-[1107px] h-auto max-h-4 absolute top-[40%]' />
                 <RoomLine3 classname='w-[75%] max-w-[1107px] h-auto max-h-12 absolute top-[70%]' />
                 <div className={cx(
@@ -75,7 +78,7 @@ const Rooms = () => {
                     'text-yellow-custom'
                 )}
                 >
-                    <div className='flex flex-row w-full text-xl sm:text-3xl justify-center items-center mb-12 text-center '>
+                    <div className='flex flex-row w-full text-lg sm:text-3xl justify-center items-center mb-8 sm:mb-12 text-center '>
                         <div className='w-1/3'>NAME</div>
                         <div className='w-1/3'>PLAYERS</div>
                         <div className='w-1/3'></div>
@@ -83,11 +86,11 @@ const Rooms = () => {
                     <div className='flex flex-col h-full w-full overflow-y-auto scrollbar-hide gap-[5px]'>
                         {roomDetails.map(({ name, players }) => {
                             return (
-                                <div className='flex flex-row w-full text-md md:text-xl justify-center items-center text-center'>
+                                <div className='flex flex-row w-full text-xs md:text-xl justify-center items-center text-center'>
                                     <div className='w-1/3 break-words'>{name}</div>
                                     <div className='w-1/3'>{players}</div>
                                     <div className='w-1/3 relative flex justify-center items-center my-auto'>
-                                        <RoomButton classname='w-1/3 h-auto m-auto btn-base min-h-[40px] min-w-[80px]' />
+                                        <RoomButton classname='w-1/3 h-auto m-auto btn-base min-h-[20px] min-w-[80px]' />
                                         <div className='absolute'>JOIN</div>
                                     </div>
                                 </div>
