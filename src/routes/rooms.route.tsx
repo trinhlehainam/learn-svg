@@ -12,7 +12,7 @@ import RoomTitleBorderTop from '../svg/roomtitleborder-top.svg';
 const Rooms = () => {
     const roomDetails = [
         {
-            name: 'AAAAA',
+            name: 'AAAAAAAAAAAAAA',
             players: '1/3'
         },
         {
@@ -72,10 +72,10 @@ const Rooms = () => {
                 <div className={cx(
                     'absolute top-[34.3%] w-[75%] max-w-[1107px] max-h-[35.2%] overflow-hidden',
                     'flex flex-col items-center',
-                    'text-center text-yellow-custom'
+                    'text-yellow-custom'
                 )}
                 >
-                    <div className='flex flex-row w-full text-xl sm:text-3xl justify-center items-center mb-12'>
+                    <div className='flex flex-row w-full text-xl sm:text-3xl justify-center items-center mb-12 text-center '>
                         <div className='w-1/3'>NAME</div>
                         <div className='w-1/3'>PLAYERS</div>
                         <div className='w-1/3'></div>
@@ -83,8 +83,8 @@ const Rooms = () => {
                     <div className='flex flex-col h-full w-full overflow-y-auto scrollbar-hide gap-[5px]'>
                         {roomDetails.map(({ name, players }) => {
                             return (
-                                <div className='flex flex-row w-full text-md md:text-xl justify-center items-center'>
-                                    <div className='w-1/3'>{name}</div>
+                                <div className='flex flex-row w-full text-md md:text-xl justify-center items-center text-center'>
+                                    <div className='w-1/3 break-words'>{name}</div>
                                     <div className='w-1/3'>{players}</div>
                                     <div className='w-1/3 relative flex justify-center items-center my-auto'>
                                         <RoomButton classname='w-1/3 h-auto m-auto btn-base min-h-[40px] min-w-[80px]' />
