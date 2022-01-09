@@ -58,13 +58,13 @@ const Rooms = () => {
                 )}
                 >
                     <RoomTitleBorderTop classname='w-fit h-auto' />
-                    <div className="my-4">
+                    <div className="my-2">
                         ROOM
                     </div>
                     <RoomTitleBorderBottom classname='w-fit h-auto' />
                 </div>
                 <Link to='/play'>
-                    <RoomCancelButton classname='absolute top-[10%] right-[12%] w-[10%] h-auto' />
+                    <RoomCancelButton classname='absolute top-0 right-0 w-auto hidden sm:block' />
                 </Link>
                 <RoomLine1 classname='w-[75%] max-w-[1107px] h-auto max-h-6 absolute top-[30%]' />
                 <RoomLine2 classname='w-[75%] max-w-[1107px] h-auto max-h-4 absolute top-[40%]' />
@@ -75,7 +75,7 @@ const Rooms = () => {
                     'text-center text-yellow-custom'
                 )}
                 >
-                    <div className='flex flex-row w-full text-3xl justify-center items-center mb-12'>
+                    <div className='flex flex-row w-full text-xl sm:text-3xl justify-center items-center mb-12'>
                         <div className='w-1/3'>NAME</div>
                         <div className='w-1/3'>PLAYERS</div>
                         <div className='w-1/3'></div>
@@ -83,11 +83,11 @@ const Rooms = () => {
                     <div className='flex flex-col h-full w-full overflow-y-auto scrollbar-hide gap-[5px]'>
                         {roomDetails.map(({ name, players }) => {
                             return (
-                                <div className='flex flex-row w-full text-xl justify-center items-center'>
+                                <div className='flex flex-row w-full text-md md:text-xl justify-center items-center'>
                                     <div className='w-1/3'>{name}</div>
                                     <div className='w-1/3'>{players}</div>
                                     <div className='w-1/3 relative flex justify-center items-center my-auto'>
-                                        <RoomButton classname='w-1/3 h-auto m-auto btn-base' />
+                                        <RoomButton classname='w-1/3 h-auto m-auto btn-base min-h-[40px] min-w-[80px]' />
                                         <div className='absolute'>JOIN</div>
                                     </div>
                                 </div>
@@ -99,20 +99,20 @@ const Rooms = () => {
                 </div>
                 <div className={cx(
                     'absolute top-[79%] w-3/4',
-                    'flex justify-center items-center gap-x-14'
+                    'flex justify-center items-center -space-x-1 sm:gap-x-8'
                 )}
                 >
                     <div className='relative flex justify-center items-center'>
-                        <RoomButton classname='h-auto w-2/3 btn-base' />
-                        <div className='absolute text-yellow-custom text-2xl'>REFRESH</div>
+                        <RoomButton classname='h-auto w-2/3 min-w-[80px] btn-base' />
+                        <div className='absolute text-yellow-custom text-md sm:text-2xl'>REFRESH</div>
                     </div>
                     <div className='relative flex justify-center items-center'>
-                        <RoomButton classname='h-auto w-2/3 btn-base' />
-                        <div className='absolute text-yellow-custom text-2xl'>CREATE</div>
+                        <RoomButton classname='h-auto w-2/3 min-w-[80px] btn-base' />
+                        <div className='absolute text-yellow-custom text-md sm:text-2xl'>CREATE</div>
                     </div>
                     <div className='relative flex justify-center items-center'>
-                        <RoomButton classname='h-auto w-2/3 btn-base' />
-                        <div className='absolute text-yellow-custom text-2xl'>FIND</div>
+                        <RoomButton classname='h-auto w-2/3 min-w-[80px] btn-base' />
+                        <div className='absolute text-yellow-custom text-md sm:text-2xl'>FIND</div>
                     </div>
                 </div>
             </div>

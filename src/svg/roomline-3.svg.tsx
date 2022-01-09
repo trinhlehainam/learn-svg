@@ -27,7 +27,7 @@ const RoomLine3: FC<Props> = ({classname}) => {
                                 strokeLinejoin="miter"
                                 strokeMiterlimit="10"
                                 strokeOpacity="1"
-                                strokeWidth="22.222"
+                                strokeWidth="15"
                                 d="M11527.9 7182.09h892.6l96.2 96.11 92.9-92.89H14151l52.7-52.66h1630l43 42.94h423.3"
                             ></path>
                         </g>
@@ -40,7 +40,7 @@ const RoomLine3: FC<Props> = ({classname}) => {
                                 strokeLinejoin="miter"
                                 strokeMiterlimit="10"
                                 strokeOpacity="1"
-                                strokeWidth="13.379"
+                                strokeWidth="9"
                                 d="M16300 8649.29l-54.4 54.32h-1114.2l-59.4-59.33-60 60h-975.3l-57.8-57.73"
                             ></path>
                         </g>
@@ -53,7 +53,7 @@ const RoomLine3: FC<Props> = ({classname}) => {
                                 strokeLinejoin="miter"
                                 strokeMiterlimit="10"
                                 strokeOpacity="1"
-                                strokeWidth="13.424"
+                                strokeWidth="9"
                                 d="M16246.6 8733.6l53.4-53.29"
                             ></path>
                         </g>
@@ -66,7 +66,7 @@ const RoomLine3: FC<Props> = ({classname}) => {
                                 strokeLinejoin="miter"
                                 strokeMiterlimit="10"
                                 strokeOpacity="1"
-                                strokeWidth="11.561"
+                                strokeWidth="10"
                                 d="M14909.9 7421.43l50.7 50.7h569.2l101.2-101.28 105.1 105.03h505.3l58.6-58.61"
                             ></path>
                         </g>
@@ -79,7 +79,7 @@ const RoomLine3: FC<Props> = ({classname}) => {
                                 strokeLinejoin="miter"
                                 strokeMiterlimit="10"
                                 strokeOpacity="1"
-                                strokeWidth="12.762"
+                                strokeWidth="10"
                                 d="M16300 8206.92h-1400.5l-49.1 49.13"
                             ></path>
                         </g>
@@ -92,7 +92,7 @@ const RoomLine3: FC<Props> = ({classname}) => {
                                 strokeLinejoin="miter"
                                 strokeMiterlimit="10"
                                 strokeOpacity="1"
-                                strokeWidth="11.418"
+                                strokeWidth="9.5"
                                 d="M16300 7358.22h-231.6"
                             ></path>
                         </g>
@@ -105,7 +105,7 @@ const RoomLine3: FC<Props> = ({classname}) => {
                                 strokeLinejoin="miter"
                                 strokeMiterlimit="10"
                                 strokeOpacity="1"
-                                strokeWidth="11.993"
+                                strokeWidth="10"
                                 d="M16300 7730.87h-169.7"
                             ></path>
                         </g>
@@ -118,7 +118,7 @@ const RoomLine3: FC<Props> = ({classname}) => {
                                 strokeLinejoin="miter"
                                 strokeMiterlimit="10"
                                 strokeOpacity="1"
-                                strokeWidth="12.56"
+                                strokeWidth="11"
                                 d="M16300 8117.72l-52.8-52.81"
                             ></path>
                         </g>

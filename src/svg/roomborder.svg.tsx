@@ -30,7 +30,7 @@ const RoomBorder: FC<Props> = ({ classname }) => {
                                         strokeLinejoin="miter"
                                         strokeMiterlimit="10"
                                         strokeOpacity="1"
-                                        strokeWidth="10"
+                                        strokeWidth="8"
                                         d="M12777.6 14479.7h-2309.8c-53.2 53.2-83 83-136.1 136.2v1548l136.1 136.1h2309.8l136.1-136.1v-1548c-53.1-53.2-82.9-83-136.1-136.2z"
                                     ></path>
                                 </g>

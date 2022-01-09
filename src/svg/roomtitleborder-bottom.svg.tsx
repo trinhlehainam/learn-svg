@@ -27,7 +27,7 @@ const RoomTitleBorderBottom: FC<Props> = ({classname}) => {
                                 strokeLinejoin="miter"
                                 strokeMiterlimit="10"
                                 strokeOpacity="1"
-                                strokeWidth="19.302"
+                                strokeWidth="12.302"
                                 d="M16271.8 16300v-126l-174.7-174.7-174.5 174.7v126"
                             ></path>
                         </g>
@@ -40,7 +40,7 @@ const RoomTitleBorderBottom: FC<Props> = ({classname}) => {
                                 strokeLinejoin="miter"
                                 strokeMiterlimit="10"
                                 strokeOpacity="1"
-                                strokeWidth="19.206"
+                                strokeWidth="12.206"
                                 d="M15673.1 16300l169.7-169.7"
                             ></path>
                         </g>
@@ -53,7 +53,7 @@ const RoomTitleBorderBottom: FC<Props> = ({classname}) => {
                                 strokeLinejoin="miter"
                                 strokeMiterlimit="10"
                                 strokeOpacity="1"
-                                strokeWidth="19.134"
+                                strokeWidth="12.134"
                                 d="M16130.9 16070l169.1 169.1"
                             ></path>
                         </g>
@@ -66,7 +66,7 @@ const RoomTitleBorderBottom: FC<Props> = ({classname}) => {
                                 strokeLinejoin="miter"
                                 strokeMiterlimit="10"
                                 strokeOpacity="1"
-                                strokeWidth="22.486"
+                                strokeWidth="16.486"
                                 d="M14293.7 15483l-68.8-68.9h-96.3v68.9h843l77.7-77.6 165-165 165.1 165.1 77.5 77.5h843.1v-68.9h-96.2l-68.9 68.9"
                             ></path>
                         </g>
