@@ -66,11 +66,11 @@ const Rooms = () => {
                 <Link to='/play'>
                     <RoomCancelButton classname='absolute top-[10%] right-[12%] w-[10%] h-auto' />
                 </Link>
-                <RoomLine1 classname='w-[75%] max-w-[1155px] h-auto max-h-6 absolute top-[30%]' />
-                <RoomLine2 classname='w-[75%] max-w-[1155px] h-auto max-h-4 absolute top-[40%]' />
-                <RoomLine3 classname='w-[75%] max-w-[1155px] h-auto max-h-12 absolute top-[70%]' />
+                <RoomLine1 classname='w-[75%] max-w-[1107px] h-auto max-h-6 absolute top-[30%]' />
+                <RoomLine2 classname='w-[75%] max-w-[1107px] h-auto max-h-4 absolute top-[40%]' />
+                <RoomLine3 classname='w-[75%] max-w-[1107px] h-auto max-h-12 absolute top-[70%]' />
                 <div className={cx(
-                    'absolute top-[34.3%] w-[75%] max-w-[1155px] max-h-[35.2%] overflow-hidden',
+                    'absolute top-[34.3%] w-[75%] max-w-[1107px] max-h-[35.2%] overflow-hidden',
                     'flex flex-col items-center',
                     'text-center text-yellow-custom'
                 )}
@@ -80,14 +80,14 @@ const Rooms = () => {
                         <div className='w-1/3'>PLAYERS</div>
                         <div className='w-1/3'></div>
                     </div>
-                    <div className='flex flex-col h-full w-full overflow-y-auto scrollbar-hide gap-2'>
+                    <div className='flex flex-col h-full w-full overflow-y-auto scrollbar-hide gap-[5px]'>
                         {roomDetails.map(({ name, players }) => {
                             return (
                                 <div className='flex flex-row w-full text-xl justify-center items-center'>
                                     <div className='w-1/3'>{name}</div>
                                     <div className='w-1/3'>{players}</div>
-                                    <div className='w-1/3 relative flex justify-center items-center'>
-                                        <RoomButton classname='w-1/3 h-auto m-auto' />
+                                    <div className='w-1/3 relative flex justify-center items-center my-auto'>
+                                        <RoomButton classname='w-1/3 h-auto m-auto btn-base' />
                                         <div className='absolute'>JOIN</div>
                                     </div>
                                 </div>
@@ -98,13 +98,22 @@ const Rooms = () => {
                     </div>
                 </div>
                 <div className={cx(
-                    'absolute bottom-[10%] w-3/4',
+                    'absolute top-[79%] w-3/4',
                     'flex justify-center items-center gap-x-14'
                 )}
                 >
-                    <RoomButton classname='h-auto w-[250px]' />
-                    <RoomButton classname='h-auto w-[250px]' />
-                    <RoomButton classname='h-auto w-[250px]' />
+                    <div className='relative flex justify-center items-center'>
+                        <RoomButton classname='h-auto w-2/3 btn-base' />
+                        <div className='absolute text-yellow-custom text-2xl'>REFRESH</div>
+                    </div>
+                    <div className='relative flex justify-center items-center'>
+                        <RoomButton classname='h-auto w-2/3 btn-base' />
+                        <div className='absolute text-yellow-custom text-2xl'>CREATE</div>
+                    </div>
+                    <div className='relative flex justify-center items-center'>
+                        <RoomButton classname='h-auto w-2/3 btn-base' />
+                        <div className='absolute text-yellow-custom text-2xl'>FIND</div>
+                    </div>
                 </div>
             </div>
         </div>
