@@ -5,7 +5,7 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                yellow : {
+                yellow: {
                     custom: '#ffd58c',
                 }
             },
@@ -17,9 +17,11 @@ module.exports = {
 
             },
             keyframes: {
-                
+
             }
         },
     },
-    plugins: [],
+    plugins: [
+        require('tailwind-scrollbar-hide')
+    ],
 }

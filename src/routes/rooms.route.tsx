@@ -80,7 +80,7 @@ const Rooms = () => {
                         <div className='w-1/3'>PLAYERS</div>
                         <div className='w-1/3'></div>
                     </div>
-                    <div className='flex flex-col h-full w-full overflow-hidden gap-2'>
+                    <div className='flex flex-col h-full w-full overflow-y-auto scrollbar-hide gap-2'>
                         {roomDetails.map(({ name, players }) => {
                             return (
                                 <div className='flex flex-row w-full text-xl justify-center items-center'>
