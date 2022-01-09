@@ -4,7 +4,8 @@ import Menu from '../components/menu.component';
 const Play = () => {
     const playMenu = [
         { text: 'Single', path: '/game' },
-        { text: 'Multiplayer', path: '/multiplayer' },
+        { text: 'Multiplayer', path: '/rooms' },
+        { text: 'Back', path: '/' },
     ];
 
     return (
