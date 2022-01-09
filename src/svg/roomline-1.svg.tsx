@@ -28,7 +28,7 @@ const RoomLine1: FC<Props> = ({ classname }) => {
                                     strokeLinejoin="miter"
                                     strokeMiterlimit="10"
                                     strokeOpacity="1"
-                                    strokeWidth="22.222"
+                                    strokeWidth="15"
                                     d="M11527.9 8704.08h2289.3l87.7-87.73h2082.9l72.2 72.23h240"
                                 ></path>
                             </g>
@@ -93,7 +93,7 @@ const RoomLine1: FC<Props> = ({ classname }) => {
                                     strokeLinejoin="miter"
                                     strokeMiterlimit="10"
                                     strokeOpacity="1"
-                                    strokeWidth="23.205"
+                                    strokeWidth="14"
                                     d="M15087.2 8997.57l93.2 93.22h1026.5l93.1-92.99"
                                 ></path>
                             </g>

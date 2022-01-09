@@ -1,4 +1,10 @@
-const RoomTitleBorderTop = () => {
+import { FC } from "react";
+
+interface Props {
+    classname: string
+}
+
+const RoomTitleBorderTop: FC<Props> = ({classname}) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -6,6 +12,8 @@ const RoomTitleBorderTop = () => {
             height="57.377"
             version="1.1"
             viewBox="0 0 85.391 15.181"
+            preserveAspectRatio="none"
+            className={classname}
         >
             <g transform="translate(102.487 -243.966)">
                 <g transform="matrix(.03528 0 0 -.03528 -648.21 873.441)">
@@ -58,7 +66,7 @@ const RoomTitleBorderTop = () => {
                                 strokeLinejoin="miter"
                                 strokeMiterlimit="10"
                                 strokeOpacity="1"
-                                strokeWidth="36.486"
+                                strokeWidth="22.486"
                                 d="M16134.9 15901.6l68.9 68.9h96.2v-68.9h-843l-77.6 77.6-165 165-165.1-165.1-77.6-77.5h-843.1v68.9h96.3l68.8-68.9"
                             ></path>
                         </g>

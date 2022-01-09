@@ -10,6 +10,32 @@ import RoomTitleBorderBottom from '../svg/roomtitleborder-bottom.svg';
 import RoomTitleBorderTop from '../svg/roomtitleborder-top.svg';
 
 const Rooms = () => {
+    const roomDetails = [
+        {
+            name: 'AAAAA',
+            players: '1/3'
+        },
+        {
+            name: 'BBBBBB',
+            players: '1/3'
+        },
+        {
+            name: 'CCCCCCC',
+            players: '1/3'
+        },
+        {
+            name: 'CCCCCCC',
+            players: '1/3'
+        },
+        {
+            name: 'CCCCCCC',
+            players: '1/3'
+        },
+        {
+            name: 'CCCCCCC',
+            players: '1/3'
+        },
+    ]
     return (
         <div
             className={cx(
@@ -26,30 +52,59 @@ const Rooms = () => {
                 <RoomBorder classname='w-[90%] h-full max-w-[1280px]' />
                 <div className={cx(
                     'absolute top-[7%]',
-                    'text-center text-yellow-custom text-3xl',
+                    'flex flex-col items-center',
+                    'text-yellow-custom text-3xl',
                     'md:text-5xl'
                 )}
                 >
-                    <RoomTitleBorderTop />
+                    <RoomTitleBorderTop classname='w-fit h-auto' />
                     <div className="my-4">
                         ROOM
                     </div>
-                    <RoomTitleBorderBottom />
+                    <RoomTitleBorderBottom classname='w-fit h-auto' />
                 </div>
-                <RoomLine1 classname='w-[75%] max-w-[1155px] h-auto max-h-6 absolute top-[30%]' />
-                <RoomLine2 classname='w-[75%] max-w-[1155px] h-auto max-h-4 absolute top-[40%]' />
-                <RoomLine3 classname='w-[75%] max-w-[1155px] h-auto max-h-12 absolute top-[70%]' />
                 <Link to='/play'>
                     <RoomCancelButton classname='absolute top-[10%] right-[12%] w-[10%] h-auto' />
                 </Link>
+                <RoomLine1 classname='w-[75%] max-w-[1155px] h-auto max-h-6 absolute top-[30%]' />
+                <RoomLine2 classname='w-[75%] max-w-[1155px] h-auto max-h-4 absolute top-[40%]' />
+                <RoomLine3 classname='w-[75%] max-w-[1155px] h-auto max-h-12 absolute top-[70%]' />
                 <div className={cx(
-                    'absolute bottom-[8%] w-3/4',
-                    'flex justify-center items-center gap-x-10'
+                    'absolute top-[34.3%] w-[75%] max-w-[1155px] max-h-[35.2%] overflow-hidden',
+                    'flex flex-col items-center',
+                    'text-center text-yellow-custom'
                 )}
                 >
-                    <RoomButton classname='scale-90 h-fit w-fit' />
-                    <RoomButton classname='scale-90 h-fit w-fit' />
-                    <RoomButton classname='scale-90 h-fit w-fit' />
+                    <div className='flex flex-row w-full text-3xl justify-center items-center mb-12'>
+                        <div className='w-1/3'>NAME</div>
+                        <div className='w-1/3'>PLAYERS</div>
+                        <div className='w-1/3'></div>
+                    </div>
+                    <div className='flex flex-col h-full w-full overflow-hidden gap-2'>
+                        {roomDetails.map(({ name, players }) => {
+                            return (
+                                <div className='flex flex-row w-full text-xl justify-center items-center'>
+                                    <div className='w-1/3'>{name}</div>
+                                    <div className='w-1/3'>{players}</div>
+                                    <div className='w-1/3 relative flex justify-center items-center'>
+                                        <RoomButton classname='w-1/3 h-auto m-auto' />
+                                        <div className='absolute'>JOIN</div>
+                                    </div>
+                                </div>
+                            );
+                        })}
+                    </div>
+                    <div>
+                    </div>
+                </div>
+                <div className={cx(
+                    'absolute bottom-[10%] w-3/4',
+                    'flex justify-center items-center gap-x-14'
+                )}
+                >
+                    <RoomButton classname='h-auto w-[250px]' />
+                    <RoomButton classname='h-auto w-[250px]' />
+                    <RoomButton classname='h-auto w-[250px]' />
                 </div>
             </div>
         </div>

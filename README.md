@@ -91,6 +91,7 @@
 - [clipPath](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/clipPath) - This help to how to use clip-path to clip images.
 - [clipPath Animation](https://css-playground.com/view/65/clipping-paths-with-clip-path) - This help to how to use animate clip-path in svg.
 - [add custom font to react](https://blog.greenroots.info/3-quick-ways-to-add-fonts-to-your-react-app) - This help to how to add custom front to my React Project.
+- [Scale SVG](https://css-tricks.com/scale-svg/) - This help to how to SVG and fit to div box.
 
 ## Author
 
