@@ -12,11 +12,19 @@ import RoomTitleBorderTop from '../svg/roomtitleborder-top.svg';
 const Rooms = () => {
     const roomDetails = [
         {
-            name: 'AAAAAAAAAAAAAA',
+            name: 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
             players: '1/3'
         },
         {
             name: 'BBBBBB',
+            players: '1/3'
+        },
+        {
+            name: 'CCCCCCC',
+            players: '1/3'
+        },
+        {
+            name: 'CCCCCCC',
             players: '1/3'
         },
         {
@@ -67,7 +75,10 @@ const Rooms = () => {
                     <RoomTitleBorderBottom classname='w-[80%] sm:w-fit h-auto' />
                 </div>
                 <Link to='/play'>
-                    <RoomCancelButton classname='absolute top-0 right-0 w-auto hidden' />
+                    <RoomCancelButton classname={cx(
+                        'absolute top-[82%] left-[50%] transform -translate-x-1/2 sm:top-0 sm:right-0 w-[64px] h-auto sm:hidden'
+                    )}
+                    />
                 </Link>
                 <RoomLine1 classname='w-[75%] max-w-[1107px] h-auto max-h-6 absolute top-[32%] sm:top-[30%]' />
                 <RoomLine2 classname='w-[75%] max-w-[1107px] h-auto max-h-4 absolute top-[40%]' />
@@ -90,7 +101,7 @@ const Rooms = () => {
                                     <div className='w-1/3 break-words'>{name}</div>
                                     <div className='w-1/3'>{players}</div>
                                     <div className='w-1/3 relative flex justify-center items-center my-auto'>
-                                        <RoomButton classname='w-1/3 h-auto m-auto btn-base min-h-[20px] min-w-[80px]' />
+                                        <RoomButton classname='w-1/3 h-auto m-auto btn-base min-w-[60px]' />
                                         <div className='absolute pointer-events-none'>JOIN</div>
                                     </div>
                                 </div>
@@ -101,7 +112,7 @@ const Rooms = () => {
                     </div>
                 </div>
                 <div className={cx(
-                    'absolute top-[79%] w-3/4',
+                    'absolute top-[75%] sm:top-[79%] w-3/4',
                     'flex justify-center items-center -space-x-1 sm:gap-x-8'
                 )}
                 >
