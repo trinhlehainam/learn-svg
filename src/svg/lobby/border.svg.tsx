@@ -4,7 +4,7 @@ interface Props {
     classname: string
 };
 
-const Border: FC<Props> = ({ classname }) => {
+const LobbyBorder: FC<Props> = ({ classname }) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -168,4 +168,4 @@ const Border: FC<Props> = ({ classname }) => {
     );
 }
 
-export default Border;
+export default LobbyBorder;

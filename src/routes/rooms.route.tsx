@@ -70,7 +70,7 @@ const Rooms = () => {
                 >
                     <RoomTitleBorderTop classname='w-[80%] sm:w-fit h-auto' />
                     <div className="my-2">
-                        ROOM
+                        ROOMS
                     </div>
                     <RoomTitleBorderBottom classname='w-[80%] sm:w-fit h-auto' />
                 </div>
@@ -120,10 +120,10 @@ const Rooms = () => {
                         <RoomButton classname='h-auto w-2/3 min-w-[80px] btn-base' />
                         <div className='absolute text-yellow-custom text-md sm:text-2xl pointer-events-none'>REFRESH</div>
                     </div>
-                    <div className='relative flex justify-center items-center'>
+                    <Link to='/lobby' className='relative flex justify-center items-center'>
                         <RoomButton classname='h-auto w-2/3 min-w-[80px] btn-base' />
                         <div className='absolute text-yellow-custom text-md sm:text-2xl pointer-events-none'>CREATE</div>
-                    </div>
+                    </Link>
                     <div className='relative flex justify-center items-center'>
                         <RoomButton classname='h-auto w-2/3 min-w-[80px] btn-base' />
                         <div className='absolute text-yellow-custom text-md sm:text-2xl pointer-events-none'>FIND</div>
