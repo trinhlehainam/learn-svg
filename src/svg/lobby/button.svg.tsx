@@ -15,6 +15,12 @@ const Button: FC<Props> = ({ classname }) => {
             preserveAspectRatio="none"
             className={classname}
         >
+            <defs>
+                <radialGradient id="my-gradient">
+                    <stop offset="0%" stopColor="#e66465" />
+                    <stop offset="100%" stopColor="#9198e5" />
+                </radialGradient>
+            </defs>
             <g transform="translate(127.817 208.603)">
                 <g transform="matrix(.03528 0 0 -.03528 -596.765 755.278)">
                     <g>
@@ -29,6 +35,19 @@ const Button: FC<Props> = ({ classname }) => {
                                 strokeOpacity="1"
                                 strokeWidth="23.888"
                                 d="M9503.15 16214.8V15787h-691.08l-85.28-85.2-85.21 85.2h-691.14v427.8h691.14l85.21 85.2 85.28-85.2z"
+                            ></path>
+                            <path
+                                fill="none"
+                                stroke="#ffd58c"
+                                strokeDasharray="none"
+                                strokeLinecap="butt"
+                                strokeLinejoin="miter"
+                                strokeMiterlimit="10"
+                                strokeOpacity="1"
+                                strokeWidth="23.888"
+                                d="M9503.15 16214.8V15787h-691.08l-85.28-85.2-85.21 85.2h-691.14v427.8h691.14l85.21 85.2 85.28-85.2z"
+
+                                className="fill"
                             ></path>
                         </g>
                         <g transform="scale(1.67094)">

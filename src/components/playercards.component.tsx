@@ -5,7 +5,7 @@ import BorderTop from '../svg/lobby/border-top.svg';
 import IconBorder from '../svg/lobby/iconborder.svg';
 import PlayerBorder from '../svg/lobby/playerborder.svg';
 
-const PlayerCard = () => {
+const PlayerCards = () => {
     return (
         <div className={cx(
             'flex justify-center items-center',
@@ -41,4 +41,4 @@ const PlayerCard = () => {
     )
 };
 
-export default PlayerCard;
+export default PlayerCards;

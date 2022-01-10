@@ -10,7 +10,7 @@ const LobbyChatBox = () => {
         >
             <input
                 type='text'
-                className='peer outline-none border-2 border-yellow-custom bg-gray-700/90 w-full text-lg'
+                className='peer outline-none border-2 border-yellow-custom bg-gray-700/90 w-full text-lg px-2'
             />
             <div
                 className={cx(
