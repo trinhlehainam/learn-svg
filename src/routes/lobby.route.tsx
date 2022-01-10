@@ -20,7 +20,7 @@ const Lobby = () => {
             >
                 <PlayerCards />
                 <div className='flex mt-20 translate-x-1/4 w-1/2'>
-                    <Link to='/game' className='relative flex justify-center items-center w-1/2'>
+                    <Link to='/play' className='relative flex justify-center items-center w-1/2'>
                         <Button classname='h-auto btn-base peer' />
                         <div className='absolute text-yellow-custom text-4xl pointer-events-none peer-hover:scale-[1.2]'>PLAY</div>
                     </Link>
