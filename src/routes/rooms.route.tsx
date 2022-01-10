@@ -1,13 +1,13 @@
 import cx from 'classnames'
 import { Link } from 'react-router-dom';
-import RoomBorder from '../svg/roomborder.svg';
-import RoomButton from '../svg/roombutton.svg';
-import RoomCancelButton from '../svg/roomcanclebutton.svg';
-import RoomLine1 from '../svg/roomline-1.svg';
-import RoomLine2 from '../svg/roomline-2.svg';
-import RoomLine3 from '../svg/roomline-3.svg';
-import RoomTitleBorderBottom from '../svg/roomtitleborder-bottom.svg';
-import RoomTitleBorderTop from '../svg/roomtitleborder-top.svg';
+import RoomBorder from '../svg/room/roomborder.svg';
+import RoomButton from '../svg/room/roombutton.svg';
+import RoomCancelButton from '../svg/room/roomcanclebutton.svg';
+import RoomLine1 from '../svg/room/roomline-1.svg';
+import RoomLine2 from '../svg/room/roomline-2.svg';
+import RoomLine3 from '../svg/room/roomline-3.svg';
+import RoomTitleBorderBottom from '../svg/room/roomtitleborder-bottom.svg';
+import RoomTitleBorderTop from '../svg/room/roomtitleborder-top.svg';
 
 const Rooms = () => {
     const roomDetails = [
